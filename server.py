@@ -40,10 +40,10 @@ class handle_server():
         	socketserver.TCPServer)
         	
     def exit(self):
-        	return(exit())
+        return(exit())
         	    
     def quit(self):
-        	return(quit())
+        return(quit())
         
 if(__name__ == '__main__'):
     handle_server()
