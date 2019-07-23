@@ -1,3 +1,4 @@
+#Updated : 27/07/2019
 __copyright__ = """
 Copyright (C) 2018-2019
 MSP (Message Send Protocol)
@@ -17,6 +18,10 @@ def Text(msg1, msg2):
 class Message(object):
     def __str__(self):
         self.msg = type(str())
+        
+    def __unicode__(self):
+        text_coding = unicode(__str__)
+        text_coding.encode('utf-8')
         
 class UDP(object):
     def __init__(self):
