@@ -34,9 +34,16 @@ class ThreadedTCPRequestHandler(socketserver.BaseRequestHandler):
 class MyTCPServer(socketserver.ThreadingMixIn, socketserver.TCPServer):
     pass
     
-class handle_server(object):
+class handle_server():
     def __repr__(self):
-        return(MyTCPServer(), ThreadedTCPRequestHandler(), server())
+        return(MyTCPServer(), ThreadedTCPRequestHandler(), server(), 
+        	socketserver.TCPServer)
+        	
+    def exit(self):
+        	return(exit())
+        	    
+    def quit(self):
+        	return(quit())
         
 if(__name__ == '__main__'):
     handle_server()
